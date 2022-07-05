@@ -66,7 +66,8 @@ const removeBook = (i) => {
 // Function to add a new book to the array books
 const addNewBook = () => {
   // Calculate book id
-  const id = books.length + 1;
+  const lastBook = books[books.length - 1];
+  const id = lastBook.id + 1;
   // Get book's information from the add-book-frm form
   const title = document.querySelector('#book-title').value;
   const author = document.querySelector('#book-author').value;
