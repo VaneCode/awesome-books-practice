@@ -6,22 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome books</title>
+    <link rel="stylesheet" href="./dist/styles.css">
 </head>
 
 <body>
 
-    <head></head>
+    <header>
+        <nav>
+            <h1>All awesome books practice</h1>
+            <ul>
+                <li>
+                    <a href="#books-list-section">Books</a>
+                </li>
+                <li>
+                    <a href="#new-book-section">Add new book</a>
+                </li>
+                <li>
+                    <a href="#contact-section">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <!--List of books section-->
         <section id="books-list-section">
-            <div>
-                <h1>Awasome books</h1>
+            <div class="div-container">
                 <ul id="books-list-ul"></ul>
             </div>
         </section>
+        <hr>
         <!--Add a new book section-->
         <section id="new-book-section">
-            <div>
+            <div class="div-container">
                 <form action="" id="add-book-frm">
                     <input id="book-title" type="text" placeholder="Title">
                     <input id="book-author" type="text" placeholder="Author">
@@ -29,8 +45,28 @@
                 </form>
             </div>
         </section>
+        <!--Contact section-->
+        <section id="contact">
+            <div class="div-container">
+                <h2>Contact information</h2>
+                <p>Do you have any questions or you just want to say Hello? You can reach out to us!</p>
+                <ul>
+                    <li>
+                        <p>E-mail: bookscollections@mail.com</p>
+                    </li>
+                    <li>
+                        <p>Phone number: 03047049871</p>
+                    </li>
+                    <li>
+                        <p>Address: Central Avenue, City, Country</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>Copyright © 2022 Vanessa B. , Aneal L. and Divyansh S.</p>
+    </footer>
     <script src="./app/js/books-classes.js"></script>
 </body>
 

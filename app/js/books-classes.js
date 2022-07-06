@@ -29,32 +29,26 @@ books.push(book2);
 
 
 class InterfaceClass {
-    // Method to generate an li element for book ul list
-    static generateBooksLi = (book) => {
-        // Create elements
-        const bookLi = document.createElement('li');
-        const divBook = document.createElement('div');
-        const pTitle = document.createElement('p');
-        const pAuthor = document.createElement('p');
-        const btnRemove = document.createElement('button');
-        const hrDeco = document.createElement('hr');
+     // Method to generate an li element for book ul list
+  static generateBooksLi = (book) => {
+    // Create elements
+    const bookLi = document.createElement('li');
+    const pTitleAuthor = document.createElement('p');
+    const btnRemove = document.createElement('button');
 
-        // Add text to elements
-        pTitle.textContent = `${book.title}`;
-        pAuthor.textContent = `${book.author}`;
-        btnRemove.textContent = 'Remove';
-        // Add atributes
-        btnRemove.setAttribute('id', `${book.id}`);
+    // Add text to elements
+    pTitleAuthor.textContent = `"${book.title}" by ${book.author}`;
 
-        // Build li
-        divBook.appendChild(pTitle);
-        divBook.appendChild(pAuthor);
-        divBook.appendChild(btnRemove);
-        divBook.appendChild(hrDeco);
-        bookLi.appendChild(divBook);
+    btnRemove.textContent = 'Remove';
+    // Add atributes
+    btnRemove.setAttribute('id', `${book.id}`);
 
-        return bookLi;
-    }
+    // Build li
+    bookLi.appendChild(pTitleAuthor);
+    bookLi.appendChild(btnRemove);
+
+    return bookLi;
+  }
 
     // Method to create booksUl
     static createBooksUl = () => {
